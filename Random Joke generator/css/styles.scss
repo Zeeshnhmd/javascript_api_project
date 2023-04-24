@@ -3,9 +3,56 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
-	max-width: 1100px;
-	margin: 0 auto;
+	// max-width: 1100px;
+	// margin: 0 auto;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: 20px;
+	background-color: #fab22e;
+	display: grid;
+	place-content: center;
+	height: 100vh;
+
+	.wrapper {
+		width: 80vmin;
+		padding: 50px 40px;
+		background-color: #15161a;
+		border-radius: 5px;
+		box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+		display: grid;
+		place-items: center;
+
+		span {
+			font-size: 100px;
+		}
+
+		.joke {
+			font-size: 16px;
+			color: #fff;
+			font-weight: 400;
+			word-wrap: break-word;
+			line-height: 35px;
+			margin: 30px 0;
+			opacity: 0;
+			text-align: center;
+		}
+		.joke.fade {
+			opacity: 1;
+			transition: opacity 1s;
+		}
+
+		button {
+			display: block;
+			background-color: #fab22e;
+			border: none;
+			padding: 5px;
+			font-size: 18px;
+			color: #171721;
+			font-weight: 600;
+			padding: 12px 25px;
+			margin: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
 }
